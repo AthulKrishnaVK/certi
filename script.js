@@ -9,7 +9,7 @@ function generateCertificate() {
   const canvas = document.getElementById("certificateCanvas");
   const ctx = canvas.getContext("2d");
   const img = new Image();
-  img.src = "bb.jpg"; // Canva template
+  img.src = "imgg.jpg"; // Canva template
 
   img.onload = function() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -31,6 +31,7 @@ function downloadCertificate() {
   link.href = canvas.toDataURL("image/png");
   link.click();
 }
+
 
 
 
